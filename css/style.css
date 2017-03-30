@@ -289,6 +289,9 @@ header{
 	margin-right: 5px;
 	margin-bottom: 5px;
 }
+.card:hover{
+	border: solid 1px #fff;
+}
 .card h3{
 	padding: 0.5em 0em;
 }
