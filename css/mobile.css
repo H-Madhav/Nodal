@@ -69,22 +69,22 @@ header{
 
 }
 
-.sidenav {
+#mySidenav {
     height: 100%;
-    width: 0;
+    width: 25em;
     position: fixed;
     z-index: 3;
     top: 0;
-    left: 0;
+    left: -999px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
 }
 
-.sidenav ul li {
+#mySidenav ul li {
    list-style: none;
 }
-.sidenav ul li a {
+#mySidenav ul li a {
     text-decoration: none;
     font-size: 1.2em;
     color: #818181;
@@ -255,6 +255,8 @@ header{
 	border-radius: 100%;
 	border:solid 1px #ccc;
 	margin: 1em auto;
+	color: #4a7bb4;
+	background: #f4f4eb;
 }
 
 .whyNodal a, .aMovingExp a, .forU a{
@@ -308,7 +310,9 @@ header{
 	max-width: 35em;
 	margin: 0 auto;
 	margin-bottom: 5px;
-	
+}
+.card:hover{
+	border: solid 1px #fff;
 }
 .card h3{
 	padding: 0.5em 0em;
