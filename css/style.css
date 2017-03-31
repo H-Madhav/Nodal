@@ -68,18 +68,18 @@ header{
 
 }
 
-.headerNav ul{
+#mySidenav ul{
    padding-left: 0;
    margin: 0;
 }
 
-.headerNav ul li{
+#mySidenav ul li{
 	display: inline-block;
 	list-style: none;
 	margin-right: 1.5em;
 }
 
-.headerNav ul li a{
+#mySidenav ul li a{
 	text-decoration: none;
 	color: #000099;
 }
@@ -227,11 +227,16 @@ header{
 .whyNodal h2, .aMovingExp h2, .forU h2{
 	line-height: 1.5;
 	padding: 0.5em 0em;
+	color: #4a7bb4;
 }
 
 .whyNodal p, .aMovingExp p, .forU p{
 	padding: 0em 3em 1em 3em;
 }
+
+.whyNodal:hover, .aMovingExp:hover, .forU:hover{
+    color: rgb(40, 180, 115);
+} 
 
 .knowMore{
 	width: 3em;
@@ -241,6 +246,34 @@ header{
 	border-radius: 100%;
 	border:solid 1px #ddd;
 	margin: 0 auto;
+	color: #4a7bb4;
+	background: #f4f4eb;
+	position: relative;
+}
+
+.show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition:left 0.4s, opacity 0.4s, color 0.4s; 
+    transition: left 0.4s, opacity 0.4s, color 0.4s;
+}
+
+.hide{
+	opacity: 1;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+.knowMore:hover .show{
+	left: 42%;
+	opacity: 1;
+	color: rgb(40, 180, 115);
+}
+
+.knowMore:hover .hide{
+	opacity: 0;
 }
 
 .whyNodal a, .aMovingExp a, .forU a{
