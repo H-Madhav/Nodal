@@ -237,7 +237,7 @@ header{
 
 @media screen and (max-width:650px){
 	.whyNodal, .aMovingExp, .forU{
-		max-width: 80%;
+		max-width: 90%;
 		margin: 1em auto;
 		text-align: center;
 		background: #ddd;
@@ -366,13 +366,13 @@ header{
    margin: 0 auto;
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: center;
 }
 .appText{
-	max-width: 40%;
+	max-width: 35em;
 }
 .appImg{
-	max-width: 30%;
+	max-width: 35em;
 }
 .appImg img{
 	width: 100%;
@@ -397,16 +397,13 @@ header{
 }
 
 @media screen and (max-width: 650px){
-    .awesomeApp .wrapper{
-    	display: block;
-    }
     .appText {
-    	margin: 0 auto;
-    	max-width: 80%;
+    	min-width: 100%;
+        padding: 0.5em;
     }
 
     .appImg{
-       margin: 0 auto;
+      display: none;
     }
 }
 
