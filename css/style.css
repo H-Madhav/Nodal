@@ -209,7 +209,10 @@ header{
 .nodalForU .wrapper{
 	max-width: 120em;
 	margin: 6em auto;
-    display: flex; 
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
@@ -312,9 +315,13 @@ header{
 
 .reasonsToSelect{
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
 }
 .card{
 	max-width: calc((100% - 20px) / 3);
@@ -372,9 +379,13 @@ header{
 
 .reviewContainer{
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 	justify-content: space-around;
+	-webkit-justify-content: space-around;
 }
 
 .review{
@@ -418,9 +429,13 @@ header{
 }
 
 .imgContainerWrapper{
-	display: flex;
-	flex-wrap: nowrap;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 	justify-content: center;
+	-webkit-justify-content: center;
 }
 
 
@@ -481,9 +496,13 @@ footer{
     max-width: 120em;
     background: #fff;
     padding: 7em 0em 5em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-around;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
 }
 
 .address h3, .community h3, .Support h3{
@@ -582,7 +601,10 @@ footer{
 .featureContainer .wrapper{
 	max-width: 120em;
     margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
@@ -615,9 +637,13 @@ footer{
 .progress .wrapper{
 	max-width: 120em;
 	margin: 0 auto;
-	display: flex;
-	flex-wrap: nowrap;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 }
 
 .progressCard{
@@ -664,9 +690,13 @@ footer{
 	max-width: 120em;
 	margin: 0 auto;
 	padding: 7.5em 0;
-	display: flex;
-	flex-wrap: nowrap;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: nowrap;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 }
 
 .pricingCard{
@@ -803,9 +833,13 @@ footer{
 .getInTouch .wrapper {
 	max-width: 120em;
 	margin: 0 auto;
-	display: flex;
-	flex-wrap: nowrap;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: nowrap;
 	justify-content: space-between;
+	-webkit-justify-content: space-between;
 }
 
 .getInTouch h2{
@@ -825,8 +859,12 @@ footer{
 .awesomeApp .wrapper{
    max-width: 120em;
    margin: 0 auto;
+   display: -webkit-flex;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-flex-wrap: wrap;
    flex-wrap: nowrap;
+
 }
 
 .awesomeApp h2{
